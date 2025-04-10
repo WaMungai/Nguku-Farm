@@ -2,27 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Fresh farm eggs straight from the source. Order now!" />
-  <title>Nguku Farm | Fresh Eggs Daily</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fresh farm eggs straight from the source. Order now!" />
+    <meta name="keywords" content="fresh eggs, chicken farm, organic eggs, free range, farm to table" />
+    <meta name="author" content="Nguku Farm" />
+    <meta property="og:image" content="https://source.unsplash.com/1200x630/?farm,egg" />
+    <title>Nguku Farm | Fresh Eggs Daily</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
 
 <body class="bg-yellow-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-yellow-200 p-4 shadow-md">
+  <!-- Header with Farm Image -->
+  <header class="bg-cover bg-center p-4 shadow-md" style="background-image: url('https://source.unsplash.com/1600x900/?chicken-farm');">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Nguku Farm</h1>
+      <h1 class="text-2xl font-bold text-black">Nguku Farm</h1>
       <nav class="space-x-4">
-        <a href="#about" class="hover:underline">About</a>
-        <!--<a href="#products" class="hover:underline">Products</a> -->
-        <a href="#gallery" class="hover:underline">Gallery</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-        <a href="#testimonials" class="hover:underline">Testimonials</a>
+        <a href="#about" class="hover:underline text-white">About</a>
+        <a href="#gallery" class="hover:underline text-white">Gallery</a>
+        <a href="#testimonials" class="hover:underline text-white">Testimonials</a>
+        <a href="#contact" class="hover:underline text-white">Contact</a>
+        
       </nav>
     </div>
   </header>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/+254795587577" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/WhatsApp_logo_2023.svg" alt="Chat with us on WhatsApp" class="w-10 h-10">
+  </a>
 
   <!-- Hero Section -->
   <section class="text-center py-16 bg-yellow-100">
@@ -31,38 +39,46 @@
     <a href="#contact" class="bg-yellow-400 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-yellow-500">Order Now</a>
   </section>
 
-  <!-- About -->
-  <section id="about" class="container mx-auto py-12 px-4">
+   <!-- About -->
+   <section id="about" class="container mx-auto py-12 px-4">
     <h3 class="text-3xl font-semibold mb-4">About Us</h3>
-    <p class="text-lg">We are a small family-run chicken farm dedicated to providing fresh, high-quality eggs to our community. Our hens are free-range and fed with natural grains to ensure the best egg quality for you and your family.</p>
+    <p class="text-lg">At Nguku Farm, we pride ourselves on raising our chickens in the most natural and humane way possible. Our hens are free to roam the lush, green pastures, eating a diet of organic grains, ensuring our eggs are both delicious and nutritious. Our mission is to provide our local community with the freshest eggs straight from the farm to your table.</p>
   </section>
-
   <!-- Products -->
-  <!-- <section id="products" class="bg-yellow-100 py-12 px-4">
+  <section id="products" class="bg-yellow-100 py-12 px-4">
     <div class="container mx-auto">
       <h3 class="text-3xl font-semibold mb-6">Our Eggs</h3>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white p-4 shadow rounded-xl">
-          <img src="https://source.unsplash.com/400x250/?eggs" alt="Regular Eggs" class="rounded-xl mb-3">
+          <img src="images/regular.jpg" alt="Regular Eggs" class="rounded-xl mb-3">
           <h4 class="text-xl font-bold mb-2">Regular Eggs</h4>
           <p>Affordable, nutritious, and fresh.</p>
           <p class="font-semibold mt-2">KES 400/dozen</p>
         </div>
         <div class="bg-white p-4 shadow rounded-xl">
-          <img src="https://source.unsplash.com/400x250/?organic-eggs" alt="Organic Eggs" class="rounded-xl mb-3">
-          <h4 class="text-xl font-bold mb-2">Organic Eggs</h4>
+          <img src="images/kienyeji.jpg" alt="Organic Eggs" class="rounded-xl mb-3">
+          <h4 class="text-xl font-bold mb-2">Kienyeji Eggs</h4>
           <p>From hens fed with 100% organic grains.</p>
           <p class="font-semibold mt-2">KES 600/dozen</p>
         </div>
         <div class="bg-white p-4 shadow rounded-xl">
-          <img src="https://source.unsplash.com/400x250/?egg-tray" alt="Mixed Tray" class="rounded-xl mb-3">
+          <img src="images/mixedeggs.jpg" alt="Mixed Tray" class="rounded-xl mb-3">
           <h4 class="text-xl font-bold mb-2">Mixed Tray</h4>
           <p>A balanced tray of sizes and colors.</p>
           <p class="font-semibold mt-2">KES 550/tray</p>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
+
+   <!-- Delivery/Order Info -->
+   <section id="order-info" class="bg-white py-12 px-4">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-4">Order & Delivery Info</h3>
+      <p class="text-lg mb-4">We offer **free delivery** within Nairobi for orders above KES 1500. Orders are typically processed and shipped within 2-3 business days. You can place an order directly through WhatsApp for fast communication or fill out the form below for inquiries.</p>
+      <p class="font-bold">For bulk orders, please contact us for special pricing!</p>
+    </div>
+  </section>
 
   <!-- Gallery -->
   <section id="gallery" class="container mx-auto py-12 px-4">
@@ -84,7 +100,7 @@
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white p-6 rounded-xl shadow">
           <p class="italic">“We've been sourcing eggs from this supplier for years now, and the consistency is unmatched. Timely deliveries, minimal breakage, and our customers have noticed the quality difference. Highly recommend for any retail operation.”</p>
-          <p class="font-semibold mt-4">– Power Star Super Markets</p>
+          <p class="font-semibold mt-4">– Powerstar Supermarket</p>
         </div>
         <div class="bg-white p-6 rounded-xl shadow">
           <p class="italic">“The eggs are always fresh and delivered on time. We've built our breakfast menu around them! Occasionally we get a slight delay during high demand seasons, but communication has always been clear. Great value for money.”</p>
@@ -93,6 +109,10 @@
         <div class="bg-white p-6 rounded-xl shadow">
             <p class="italic">““Affordable and fresh! I even recommend them to my neighbors now. Easy to order through WhatsApp, and delivery is smooth.””</p>
             <p class="font-semibold mt-4">– Faith M.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow">
+            <p class="italic">“We go through hundreds of eggs weekly, and this supplier hasn’t let us down. We like the flexible ordering and the personal touch in service. One time a tray broke during transit, and they replaced it the same day.”</p>
+            <p class="font-semibold mt-4">– Kassmart Supermarket</p>
           </div>
       </div>
     </div>
@@ -115,6 +135,7 @@
       <h4 class="text-2xl font-semibold mb-2">Our Location</h4>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.232150412697!2d36.8219466!3d-1.2920651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d525df8c13%3A0x2f2d8f9b7f0b8b7d!2sNairobi!5e0!3m2!1sen!2ske!4v1712745674842!5m2!1sen!2ske" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    
   </section>
 
   <!-- Footer -->
