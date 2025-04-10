@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fresh farm eggs straight from the source. Order now!" />
+  <title>Nguku Farm | Fresh Eggs Daily</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-yellow-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-yellow-200 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Nguku Farm</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#products" class="hover:underline">Products</a>
+        <a href="#gallery" class="hover:underline">Gallery</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="#testimonials" class="hover:underline">Testimonials</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 bg-yellow-100">
+    <h2 class="text-4xl font-bold mb-4">Fresh Eggs from Nguku Farm</h2>
+    <p class="text-lg mb-6">Naturally raised. Locally delivered.</p>
+    <a href="#contact" class="bg-yellow-400 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-yellow-500">Order Now</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container mx-auto py-12 px-4">
+    <h3 class="text-3xl font-semibold mb-4">About Us</h3>
+    <p class="text-lg">We are a small family-run chicken farm dedicated to providing fresh, high-quality eggs to our community. Our hens are free-range and fed with natural grains to ensure the best egg quality for you and your family.</p>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="bg-yellow-100 py-12 px-4">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold mb-6">Our Eggs</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 shadow rounded-xl">
+          <img src="https://source.unsplash.com/400x250/?eggs" alt="Regular Eggs" class="rounded-xl mb-3">
+          <h4 class="text-xl font-bold mb-2">Regular Eggs</h4>
+          <p>Affordable, nutritious, and fresh.</p>
+          <p class="font-semibold mt-2">KES 400/dozen</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded-xl">
+          <img src="https://source.unsplash.com/400x250/?organic-eggs" alt="Organic Eggs" class="rounded-xl mb-3">
+          <h4 class="text-xl font-bold mb-2">Organic Eggs</h4>
+          <p>From hens fed with 100% organic grains.</p>
+          <p class="font-semibold mt-2">KES 600/dozen</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded-xl">
+          <img src="https://source.unsplash.com/400x250/?egg-tray" alt="Mixed Tray" class="rounded-xl mb-3">
+          <h4 class="text-xl font-bold mb-2">Mixed Tray</h4>
+          <p>A balanced tray of sizes and colors.</p>
+          <p class="font-semibold mt-2">KES 550/tray</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="container mx-auto py-12 px-4">
+    <h3 class="text-3xl font-semibold mb-6">Gallery</h3>
+    <div class="grid md:grid-cols-3 gap-4">
+      <img src="https://source.unsplash.com/400x250/?chickens" alt="Hens" class="rounded-xl shadow">
+      <img src="https://source.unsplash.com/400x250/?chicken-farm" alt="Farm View" class="rounded-xl shadow">
+      <img src="https://source.unsplash.com/400x250/?free-range-hens" alt="Free Range Hens" class="rounded-xl shadow">
+      <img src="https://source.unsplash.com/400x250/?fresh-eggs" alt="Fresh Eggs" class="rounded-xl shadow">
+      <img src="https://source.unsplash.com/400x250/?chicken-coop" alt="Chicken Coop" class="rounded-xl shadow">
+      <img src="https://source.unsplash.com/400x250/?egg-basket" alt="Egg Basket" class="rounded-xl shadow">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-yellow-100 py-12 px-4">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-semibold mb-6">What Our Customers Say</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="italic">“The freshest eggs I’ve ever had! Nguku Farm truly delivers quality.”</p>
+          <p class="font-semibold mt-4">– Grace W., Nairobi</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="italic">“Love that they’re free-range and organic. I can really taste the difference.”</p>
+          <p class="font-semibold mt-4">– James M., Karen</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto py-12 px-4">
+    <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4 max-w-xl">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded-xl" />
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded-xl" />
+      <textarea name="message" placeholder="Your Message or Order Details" required class="w-full p-3 border rounded-xl"></textarea>
+      <button type="submit" class="bg-yellow-400 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-yellow-500">Send</button>
+    </form>
+    <div class="mt-6 text-lg">
+      <p><strong>Phone:</strong> <a href="tel:+254712345678" class="text-yellow-600 hover:underline">+254 712 345 678</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@sunnysidefarm.co.ke" class="text-yellow-600 hover:underline">info@sunnysidefarm.co.ke</a></p>
+    </div>
+    <div class="mt-8">
+      <h4 class="text-2xl font-semibold mb-2">Our Location</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.232150412697!2d36.8219466!3d-1.2920651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d525df8c13%3A0x2f2d8f9b7f0b8b7d!2sNairobi!5e0!3m2!1sen!2ske!4v1712745674842!5m2!1sen!2ske" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-yellow-200 mt-8">
+    <p>&copy; 2025 Nguku Farm. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
